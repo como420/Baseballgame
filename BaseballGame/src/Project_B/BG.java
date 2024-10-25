@@ -68,7 +68,7 @@ public class BG {
     private static boolean isValidInput(String input) {
         Set<Character> digitSet = new HashSet<>();
         for (char c : input.toCharArray()) {
-            if (digitSet.contains(c)) {
+            if (digitSet.contains(c) || !Character.isDigit(c)) {  // 문자 입력시 재입력 문구가 나오게 추가
                 return false;  // 중복된 숫자
             }
             digitSet.add(c);
