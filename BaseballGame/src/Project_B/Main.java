@@ -9,6 +9,7 @@ public class Main {
             System.out.println("환영합니다! 원하시는 번호를 입력해주세요");
             System.out.println("1. 게임 시작하기" + " 2. 게임 기록 보기" + " 3. 종료하기");
             int inputValue = sc.nextInt();  // 입력값 생성
+            sc.nextLine();                  // 버퍼에 남은 개행 문자 제거 <-- 이해가 안됨...
             switch (inputValue) {           // 입력값에 조건 부여
                 case 1:
                     System.out.println("게임을 시작합니다.");

@@ -35,8 +35,7 @@ public class BG {
                 isCorrect = true;
                 System.out.println("축하합니다! " + attempts + "번 만에 숫자를 맞추셨습니다!");
             }
-        }
-        scanner.close();
+        } // 입력 검즈 코드를 구현은 하였으나, 이해 부족
     }
 
     // 중복되지 않는 3자리 숫자를 생성하는 메소드
@@ -54,7 +53,7 @@ public class BG {
             }
         }
         return numbers;
-    }
+    }  // 위의 1부터 9까지의 범위를 지정하여 랜덤 생성하는 부분 이해 완료
 
     // 사용자 입력을 숫자 배열로 변환하는 메소드
     private static int[] convertToIntArray(String input) {
@@ -63,7 +62,7 @@ public class BG {
             numbers[i] = input.charAt(i) - '0';
         }
         return numbers;
-    }
+    }  // 해당 숫자 배열 부분 이해 완료
 
     // 숫자가 중복되지 않는지 확인하는 메소드
     private static boolean isValidInput(String input) {
@@ -75,7 +74,7 @@ public class BG {
             digitSet.add(c);
         }
         return true;
-    }
+    } // 중복 확인 부분 이해 부족
 
     // 컴퓨터 숫자와 사용자 숫자를 비교하는 메소드
     private static int[] checkNumbers(int[] computerNumbers, int[] userNumbers) {
@@ -91,7 +90,7 @@ public class BG {
         }
 
         return new int[] {strikes, balls};
-    }
+    } // 숫자 비교 부분 이해 완료
 
     // 배열에 특정 숫자가 포함되어 있는지 확인하는 메소드
     private static boolean contains(int[] array, int number) {
@@ -101,5 +100,5 @@ public class BG {
             }
         }
         return false;
-    }
+    } // 특정 숫자 포함 여부 이해 완료
 }
